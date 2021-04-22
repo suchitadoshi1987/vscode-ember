@@ -65,8 +65,8 @@ jobs:
       - name: upload vsix as artifact
         uses: actions/upload-artifact@v2
         with:
-          name: vscode-ember-unstable-${{steps.gitversion.outputs.majorMinorPatch}}.vsix
-          path: ${{github.workspace}}/vscode-ember-unstable-${{steps.gitversion.outputs.majorMinorPatch}}.vsix
+          name: vscode-ember-experimental-${{steps.gitversion.outputs.majorMinorPatch}}.vsix
+          path: ${{github.workspace}}/vscode-ember-experimental-${{steps.gitversion.outputs.majorMinorPatch}}.vsix
 
       - name: publish to marketplace VSCODE
         if: github.ref == 'refs/heads/master'

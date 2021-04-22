@@ -1,18 +1,18 @@
 {
-  "name": "vscode-ember-unstable",
-  "displayName": "Unstable Ember Language Server",
+  "name": "vscode-ember-experimental",
+  "displayName": "Experimental Ember Language Server",
   "description": "Provides features like auto complete, goto definition and diagnostics for Ember.js projects",
-  "author": "Aleksandr Kanunnikov <lifeart92@gmail.com>, Thomas Sauer <t-sauer@outlook.de>",
+  "author": "Suchita Doshi <suchitadoshi1987@gmail.com>",
   "license": "MIT",
-  "version": "2.0.10",
-  "publisher": "lifeart",
+  "version": "1.0.0",
+  "publisher": "suchitadoshi1987",
   "icon": "icon.png",
   "keywords": [
     "Ember.js",
     "Ember-CLI",
     "Glimmer",
     "Handlebars",
-    "Unstable Language server"
+    "Experimental Language server"
   ],
   "engines": {
     "vscode": "^1.22.2"
@@ -24,10 +24,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lifeart/vscode-ember"
+    "url": "https://github.com/suchitadoshi1987/vscode-ember"
   },
   "bugs": {
-    "url": "https://github.com/lifeart/vscode-ember/issues"
+    "url": "https://github.com/suchitadoshi1987/vscode-ember/issues"
   },
   "activationEvents": [
     "onLanguage:handlebars",
@@ -52,12 +52,17 @@
       }
     ],
     "configuration": {
-      "title": "Unstable Ember Language Server",
+      "title": "Experimental Ember Language Server",
       "properties": {
         "els.codeLens.relatedFiles": {
           "type": "boolean",
           "default": true,
           "description": "Show related files as Lens on first line."
+        },
+        "els.local.disableInitialization": {
+          "type": "boolean",
+          "default": true,
+          "description": "Disable eager initialization of project"
         },
         "els.local.addons": {
           "type": "array",
@@ -74,6 +79,14 @@
             "type": "string"
           },
           "description": "List of project names to ignore."
+        },
+        "els.local.includeModules": {
+          "type": "array",
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "description": "List of node modules to be included in autcomplete on lazy init mode."
         }
       }
     }
@@ -89,8 +102,8 @@
     "watch": "tsc -watch -p ./",
     "update-vscode": "node ./node_modules/vscode/bin/install",
     "postinstall": "node ./node_modules/vscode/bin/install && yarn compile",
-    "clean:cache": "yarn cache clean @lifeart/ember-language-server",
-    "build:langserver": "yarn --cwd ./node_modules/@lifeart/ember-language-server prepublish"
+    "clean:cache": "yarn cache clean @suchitadoshi1987/ember-language-server",
+    "build:langserver": "yarn --cwd ./node_modules/@suchitadoshi1987/ember-language-server prepublish"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.33",
@@ -101,7 +114,7 @@
     "vscode": "^1.1.37"
   },
   "dependencies": {
-    "@lifeart/ember-language-server": "1.6.0",
+    "@suchitadoshi1987/ember-language-server": "1.0.1",
     "vscode-languageclient": "7.0.0"
   },
   "volta": {
