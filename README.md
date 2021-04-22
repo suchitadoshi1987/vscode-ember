@@ -1,20 +1,13 @@
 # vscode-ember
 
+This is the VSCode extension to use the [Experimental Ember Language Server](https://github.com/suchitadoshi1987/ember-language-server). 
 
-This is the VSCode extension to use the [Unstable Ember Language Server](https://github.com/lifeart/ember-language-server). 
-
-`Unstable Ember Language Server` is full-featured fork of [Ember Language Server](https://github.com/emberwatch/ember-language-server). It's `stable` and `extremely` power-featured.
+`Experimental Ember Language Server` is full-featured fork of [Unstable Ember Language Server](https://github.com/lifeart/ember-language-server). It's `stable` and `extremely` power-featured.
 
 
 All `Ember Language Server` features included.
 
 ![preview](preview.gif)
-
-## Best with
-
-* [Glimmer Templates Syntax for VS Code](https://marketplace.visualstudio.com/items?itemName=lifeart.vscode-glimmer-syntax)
-* [Prettier for Handlebars](https://marketplace.visualstudio.com/items?itemName=EmberTooling.prettier-for-handlebars-vscode)
-
 
 ## Features
 
@@ -68,16 +61,6 @@ All `Ember Language Server` features included.
   - JavaScript
   - TypeScript
 
-
-## Addons
-
-* [els-a11y-addon](https://github.com/lifeart/els-a11y-addon) - Ember Language Server a11y addon.
-* [els-addon-typed-templates](https://github.com/lifeart/els-addon-typed-templates) - Typed Templates for Ember.
-* [els-addon-docs](https://github.com/lifeart/els-addon-docs) - Ember Language Server Addon Docs Completion Provider.
-* [ember-fast-cli](https://github.com/lifeart/ember-fast-cli) - Addon for Ember-cli commands execution.
-* [els-intl-addon](https://github.com/lifeart/els-intl-addon) - Internationalization addon for Unstable Ember Language Server.
-* [els-component-extraction-addon](https://github.com/lifeart/els-component-extraction-addon) - Create components from selection, using `ember-fast-cli`.
-
 ## Settings
 
 * `els.codeLens.relatedFiles` - disable / enable related files
@@ -89,3 +72,29 @@ All `Ember Language Server` features included.
 }
 
 ```
+* `els.local.ignoredProjects` -  Supports Ignoring of LS initialization on unneeded projects, for example, the below setting will ignore the initialization of the project named, `sample-project-name`:
+
+```js
+{
+    "els.local.ignoredProjects": ["sample-project-name"],
+}
+
+```
+
+* `els.local.disableInitialization` -  Disabling eager initialization of projects
+
+```js
+{
+    "els.local.disableInitialization": true,
+}
+```
+
+* `els.local.includeModules` - node_modules packages to be included during the lazy init phase for autocomplete.
+
+```js
+{
+    "els.local.includeModules": ['@foo', '@bar'],
+}
+```
+
+_Note: `ignoredProjects` leverages the projectName from the `name` property of the project's `package.json`_

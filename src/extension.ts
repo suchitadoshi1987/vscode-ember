@@ -60,7 +60,7 @@ export async function activate(context: ExtensionContext) {
   let clientOptions: LanguageClientOptions = {
     // Register the server for plain text documents
     documentSelector: ["handlebars", "javascript", "typescript"],
-    outputChannelName: "Unstable Ember Language Server",
+    outputChannelName: "Experimental Ember Language Server",
     revealOutputChannelOn: RevealOutputChannelOn.Never,
     initializationOptions: { editor: 'vscode' },
     synchronize: {
@@ -147,7 +147,7 @@ export async function activate(context: ExtensionContext) {
   // Create the language client and start the client.
   let disposable = new LanguageClient(
     "emberLanguageServer",
-    "Unstable Ember Language Server",
+    "Experimental Ember Language Server",
     serverOptions,
     clientOptions
   );
