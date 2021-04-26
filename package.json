@@ -114,7 +114,7 @@
     "vscode": "^1.1.37"
   },
   "dependencies": {
-    "@suchitadoshi1987/ember-language-server": "1.0.1",
+    "@suchitadoshi1987/ember-language-server": "1.1.1",
     "vscode-languageclient": "7.0.0"
   },
   "volta": {
