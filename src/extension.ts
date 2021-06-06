@@ -33,7 +33,7 @@ export async function activate(context: ExtensionContext) {
   let serverModule = path.join(context.extensionPath, "./start-server.js");
   let config = workspace.getConfiguration("els");
   // The debug options for the server
-  let debugOptions = { execArgv: ["--nolazy", "--inspect=6004"] };
+  let debugOptions = { execArgv: ["--nolazy", "--inspect=6444"] };
   // If the extension is launched in debug mode then the debug server options are used
   // Otherwise the run options are used
   let serverOptions: ServerOptions = {

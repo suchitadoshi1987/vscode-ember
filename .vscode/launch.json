@@ -27,6 +27,7 @@
         ],
         "stopOnEntry":false,
         "sourceMaps":true,
+        "preLaunchTask": "tsc: build - tsconfig.json",
         "outFiles":[
           "${workspaceRoot}/out/src/**/*.js"
         ]
@@ -35,12 +36,18 @@
         "name":"Attach to UELS Server",
         "type":"node",
         "request":"attach",
-        "port":6004,
+        "port":6444,
         "sourceMaps":true,
         "protocol":"inspector",
         "outFiles":[
            "${workspaceRoot}/node_modules/@suchitadoshi1987/ember-language-server/lib/**/*.js"
         ],
+        "localRoot": "${workspaceRoot}",
+        "sourceMapPathOverrides": {
+          "webpack:///./~/*": "${workspaceRoot}/node_modules/*",
+          "webpack:///./*": "${workspaceRoot}/*",
+          "webpack:///*": "*"
+        },
         "restart":true,
         "smartStep":true
      }
