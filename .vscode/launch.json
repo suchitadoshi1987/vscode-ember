@@ -42,12 +42,7 @@
         "outFiles":[
            "${workspaceRoot}/node_modules/@suchitadoshi1987/ember-language-server/lib/**/*.js"
         ],
-        "localRoot": "${workspaceRoot}",
-        "sourceMapPathOverrides": {
-          "webpack:///./~/*": "${workspaceRoot}/node_modules/*",
-          "webpack:///./*": "${workspaceRoot}/*",
-          "webpack:///*": "*"
-        },
+        "remoteRoot": "${workspaceRoot}/node_modules/@suchitadoshi1987/ember-language-server/",
         "restart":true,
         "smartStep":true
      }
