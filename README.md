@@ -1,5 +1,7 @@
 # vscode-ember
 
+**Note: This extension is experimental and will be migrated to the original [Ember Language Server extension](https://github.com/ember-tooling/vscode-ember) in the future**
+
 This is the VSCode extension to use the [Experimental Ember Language Server](https://github.com/suchitadoshi1987/ember-language-server). 
 
 `Experimental Ember Language Server` is full-featured fork of [Unstable Ember Language Server](https://github.com/lifeart/ember-language-server). It's `stable` and `extremely` power-featured.
