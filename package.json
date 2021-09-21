@@ -4,7 +4,7 @@
   "description": "Provides features like auto complete, goto definition and diagnostics for Ember.js projects",
   "author": "Suchita Doshi <suchitadoshi1987@gmail.com>",
   "license": "MIT",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "publisher": "suchitadoshi1987",
   "icon": "icon.png",
   "keywords": [
