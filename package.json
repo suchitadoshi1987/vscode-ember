@@ -30,7 +30,7 @@
     "url": "https://github.com/suchitadoshi1987/vscode-ember/issues"
   },
   "activationEvents": [
-    "workspaceContains:ember-cli-build.js",
+    "workspaceContains:**/ember-cli-build.js",
     "onCommand:els.runInEmberCLI"
   ],
   "contributes": {
