@@ -1046,10 +1046,10 @@
   resolved "https://registry.yarnpkg.com/@simple-dom/interface/-/interface-1.4.0.tgz#e8feea579232017f89b0138e2726facda6fbb71f"
   integrity sha512-l5qumKFWU0S+4ZzMaLXFU8tQZsicHEMEyAxI5kDFGhJsRqDwe0a7/iPA/GdxlGyDKseQQAgIz5kzU7eXTrlSpA==
 
-"@suchitadoshi1987/ember-language-server@1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@suchitadoshi1987/ember-language-server/-/ember-language-server-1.1.3.tgz#fbe69e04835c21762f436982320e8bac685679b9"
-  integrity sha512-JelHjPAy5ubfB0taD2iyCnIZ6T2QRd4U432D6rj7g8vMY5ARwEzDWetqgMFtSaEeBatRafiISNzpv6Y7mb8FQw==
+"@suchitadoshi1987/ember-language-server@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@suchitadoshi1987/ember-language-server/-/ember-language-server-1.3.0.tgz#ba6a806ae0d5335bd9464277188a4fddf3c4cc2c"
+  integrity sha512-4sBMoRP+Cklzo88MupESPbHs/vc8UtyeGFezuzPhm0moMkJjy/zTSTg+pcCkzmaWO0rYLiYclTItRPKtnFr4WA==
   dependencies:
     "@glimmer/syntax" "^0.73.1"
     "@lifeart/ember-extract-inline-templates" "^2.0.0"
